@@ -22,7 +22,7 @@ requirements:
   run:
     - appdirs ~=1.4
     - diskcache ~=5.0
-    - equilibrator-cache ~=0.4.0b2
+    - equilibrator-cache ~=0.4.1
     - httpx ~=0.16
     - path ~=15.0
     - periodictable ~=1.5
