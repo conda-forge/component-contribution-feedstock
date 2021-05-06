@@ -11,7 +11,7 @@ source:
   sha256: ee99f18f56ffaaf899162c3d11c9e6c3b61c390e5c1b124bcb411bd2d91673e0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
@@ -20,15 +20,10 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - appdirs ~=1.4
-    - diskcache ~=5.0
     - equilibrator-cache ~=0.4.2
-    - httpx ~=0.16
     - path ~=15.0
     - periodictable ~=1.5
     - python >=3.6
-    - pyzenodo3 ~=1.0
-    - tenacity ~=6.2
     - uncertainties ~=3.1
 
 test:
