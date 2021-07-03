@@ -1,5 +1,5 @@
 {% set name = "component-contribution" %}
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/component-contribution-{{ version }}.tar.gz
-  sha256: 619c3707f011d2bdc110b7ab9fd23467fbb591e40812563ce4944e3fa8dd50fc
+  sha256: 1ddf8f10919661c7efb2a6d1086c16fc47ad94779db33a5795a4a11ce3d9f5e4
 
 build:
   number: 0
@@ -20,7 +20,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - equilibrator-cache ~=0.4.2
+    - equilibrator-cache ~=0.4.3
     - path ~=15.0
     - periodictable ~=1.5
     - python >=3.6
