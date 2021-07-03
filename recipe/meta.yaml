@@ -20,7 +20,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - equilibrator-cache ~=0.4.2
+    - equilibrator-cache ~=0.4.3
     - path ~=15.0
     - periodictable ~=1.5
     - python >=3.6
