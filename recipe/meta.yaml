@@ -40,11 +40,12 @@ about:
   license: MIT
   license_file: LICENSE
   description: >
-    Standard reaction Gibbs energy estimation for biochemical reactions.  For more information on the method behind component-contribution, please view our open access paper:
+    Standard reaction Gibbs energy estimation for biochemical reactions.  For more information on the method behind eQuilibrator, please view our open access paper:
 
-    Noor E, Haraldsdóttir HS, Milo R, Fleming RMT (2013) Consistent Estimation of Gibbs Energy Using Component Contributions, PLoS Comput Biol 9:e1003098, DOI: 10.1371/journal.pcbi.1003098
+    M.E. Beber, M.G. Gollub, D. Mozaffari, K.M. Shebek, A.I. Flamholz, R. Milo, E. Noor (2021)
+    eQuilibrator 3.0: a database solution for thermodynamic constant estimation Nucleic Acids Research [DOI: 10.1093/nar/gkab1106]
 
-    Please, cite this paper if you publish work that uses component-contribution.
+    Please, cite this paper if you publish work that uses eQuilibrator.
   dev_url: https://gitlab.com/equilibrator/component-contribution
 
 extra:
