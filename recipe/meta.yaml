@@ -1,5 +1,5 @@
 {% set name = "component-contribution" %}
-{% set version = "0.4.4" %}
+{% set version = "0.5.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/component-contribution-{{ version }}.tar.gz
-  sha256: 1ddf8f10919661c7efb2a6d1086c16fc47ad94779db33a5795a4a11ce3d9f5e4
+  sha256: 8beccd6fbd5514d00ac93bc139e63912358f23f1da4000036c3c11d3ae23f38f
 
 build:
   number: 0
@@ -18,12 +18,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.9
   run:
-    - equilibrator-cache ~=0.4.3
-    - path ~=15.0
-    - periodictable ~=1.5
-    - python >=3.6
+    - python >=3.9
+    - equilibrator-cache ~=0.5.1
+    - scipy >=1.11
+    - path ~=16.7
     - uncertainties ~=3.1
 
 test:
@@ -39,12 +39,6 @@ about:
   summary: Standard reaction Gibbs energy estimation for biochemical reactions.
   license: MIT
   license_file: LICENSE
-  description: >
-    Standard reaction Gibbs energy estimation for biochemical reactions.  For more information on the method behind component-contribution, please view our open access paper:
-
-    Noor E, Haraldsdóttir HS, Milo R, Fleming RMT (2013) Consistent Estimation of Gibbs Energy Using Component Contributions, PLoS Comput Biol 9:e1003098, DOI: 10.1371/journal.pcbi.1003098
-
-    Please, cite this paper if you publish work that uses component-contribution.
   dev_url: https://gitlab.com/equilibrator/component-contribution
 
 extra:
