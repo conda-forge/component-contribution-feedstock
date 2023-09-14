@@ -1,5 +1,5 @@
 {% set name = "component-contribution" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/component-contribution-{{ version }}.tar.gz
-  sha256: 8beccd6fbd5514d00ac93bc139e63912358f23f1da4000036c3c11d3ae23f38f
+  sha256: 50b5257cfbcaa663c99df49f3f8a995dde6064407fe8099a9ef168f164633ba0
 
 build:
   number: 0

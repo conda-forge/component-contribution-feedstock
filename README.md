@@ -11,11 +11,6 @@ Summary: Standard reaction Gibbs energy estimation for biochemical reactions.
 
 Development: https://gitlab.com/equilibrator/component-contribution
 
-Standard reaction Gibbs energy estimation for biochemical reactions.  For more information on the method behind component-contribution, please view our open access paper:
-Noor E, Haraldsdóttir HS, Milo R, Fleming RMT (2013) Consistent Estimation of Gibbs Energy Using Component Contributions, PLoS Comput Biol 9:e1003098, DOI: 10.1371/journal.pcbi.1003098
-Please, cite this paper if you publish work that uses component-contribution.
-
-
 Current build status
 ====================
 
