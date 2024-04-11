@@ -21,8 +21,8 @@ requirements:
     - python >=3.9
   run:
     - python >=3.9
-    - equilibrator-cache ~=0.5.1
-    - scipy >=1.11
+    - equilibrator-cache ~=0.6.0
+    - scipy >=1.12
     - path ~=16.7
     - uncertainties ~=3.1
 
