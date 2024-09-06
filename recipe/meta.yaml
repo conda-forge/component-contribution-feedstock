@@ -25,8 +25,8 @@ requirements:
   run:
     - python >=3.9
     - equilibrator-cache ~=0.6.1
-    - path >=16.7
-    - uncertainties >=3.1
+    - path ~=16.7
+    - uncertainties ~=3.1
 
 test:
   imports:
