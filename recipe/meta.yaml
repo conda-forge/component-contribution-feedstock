@@ -1,30 +1,32 @@
 {% set name = "component-contribution" %}
-{% set version = "0.5.2" %}
-
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/component-contribution-{{ version }}.tar.gz
-  sha256: 50b5257cfbcaa663c99df49f3f8a995dde6064407fe8099a9ef168f164633ba0
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/component-contribution-{{ version }}.tar.gz
+  sha256: 9948283bcaa91ba5b4f25b21789c8916b8cc41086406b138df2d7edab319161b
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   host:
-    - pip
     - python >=3.9
+    - setuptools >=41
+    - setuptools-scm
+    - wheel
+    - setuptools-git-versioning >=2.0,<3
+    - pip
   run:
     - python >=3.9
-    - equilibrator-cache ~=0.5.1
-    - scipy >=1.11
-    - path ~=16.7
-    - uncertainties ~=3.1
+    - equilibrator-cache ~=0.6.1
+    - path >=16.7
+    - uncertainties >=3.1
 
 test:
   imports:
@@ -36,7 +38,7 @@ test:
 
 about:
   home: https://gitlab.com/equilibrator/component-contribution
-  summary: Standard reaction Gibbs energy estimation for biochemical reactions.
+  summary: A method for estimating the standard reaction Gibbs energy of biochemical reactions
   license: MIT
   license_file: LICENSE
   dev_url: https://gitlab.com/equilibrator/component-contribution
@@ -45,3 +47,4 @@ extra:
   recipe-maintainers:
     - eladnoor
     - Midnighter
+    
