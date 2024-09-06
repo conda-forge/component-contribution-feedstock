@@ -18,15 +18,15 @@ requirements:
   host:
     - python >=3.9
     - setuptools >=41
+    - setuptools-scm
     - wheel
-    - setuptools-git-versioning <2
+    - setuptools-git-versioning >=2.0,<3
     - pip
   run:
     - python >=3.9
-    - equilibrator-cache >=0.6.0,<0.7.dev0
-    - scipy >=1.12
-    - path >=16.7,<17.dev0
-    - uncertainties >=3.1,<4.dev0
+    - equilibrator-cache ~=0.6.1
+    - path >=16.7
+    - uncertainties >=3.1
 
 test:
   imports:
