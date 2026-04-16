@@ -1,5 +1,6 @@
 {% set name = "component-contribution" %}
 {% set version = "0.7.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -24,7 +25,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - equilibrator-cache ~=0.6.1
+    - equilibrator-cache ~=0.7.0
     - path ~=16.7
     - uncertainties ~=3.1
 
