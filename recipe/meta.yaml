@@ -1,18 +1,18 @@
 {% set name = "component-contribution" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/component-contribution-{{ version }}.tar.gz
-  sha256: 9948283bcaa91ba5b4f25b21789c8916b8cc41086406b138df2d7edab319161b
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 74ba533faec8c0068721e792778e3bb7321562e0e109ebd18ab30e65f578d0e9
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -48,4 +48,4 @@ extra:
   recipe-maintainers:
     - eladnoor
     - Midnighter
-    
+
